@@ -1,0 +1,574 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito:400i,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+main {
+  > nav {
+    background-color: #ffffff;
+    box-shadow: 0px 6px 10px #0000000f;
+
+    > div {
+      padding: 0 15px;
+      position: relative;
+      transition: all 0.2 linear;
+
+      > header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+      }
+
+      > div {
+        display: none;
+        flex-direction: column;
+        transition: all 0.25s linear;
+        padding: 30px;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #ffffff;
+        box-shadow: 0px 6px 10px #0000000f;
+        z-index: -1;
+
+        > a {
+          font-size: 16px;
+          color: #666666;
+          text-decoration: none;
+          transition: all 0.2s linear;
+
+          &:not(:first-child) {
+            margin-top: 10px;
+          }
+
+          &:hover {
+            color: #333333;
+          }
+        }
+      }
+    }
+  }
+
+  > .hello {
+    > div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 550px;
+
+      > div {
+        width: 400px;
+
+        > p {
+          color: #666666;
+          font-size: 24px;
+          margin-bottom: 5px;
+
+          &.--center {
+            text-align: center;
+          }
+
+          > .light {
+            color: #918fb3;
+          }
+        }
+
+        > h2 {
+          color: #666666;
+          font-size: 30px;
+          margin-bottom: 5px;
+        }
+
+        > h1 {
+          color: #666666;
+          font-size: 36px;
+          font-weight: 900;
+          text-align: right;
+        }
+      }
+    }
+  }
+
+  > .recommendations {
+    background-color: #918fb3;
+    padding: 50px 15px 70px 15px;
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      > h2 {
+        font-family: 'Nunito', sans-serif;
+        font-size: 24px;
+        color: #ffffff;
+        font-weight: 700;
+        margin-bottom: 40px;
+      }
+
+      > div {
+        display: grid;
+        grid-template-columns: 30px 1fr 30px;
+        align-items: center;
+        width: 100%;
+        grid-gap: 10px;
+
+        > div {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          grid-gap: 15px;
+          overflow: hidden;
+
+          > .card {
+            width: 280px;
+            font-size: 16px;
+            color: #ffffff;
+
+            > div {
+              display: flex;
+              justify-content: space-between;
+
+              > p {
+                border: 2px solid #ffffff;
+                padding: 15px;
+
+                & + p {
+                  border-left: 0;
+                  width: 100%;
+                  text-align: right;
+                }
+              }
+            }
+
+            > p {
+              border: 2px solid #ffffff;
+              border-top: 0;
+              padding: 15px;
+            }
+          }
+        }
+
+        > span {
+          width: 30px;
+          height: 50px;
+          background: #000000;
+          opacity: 0.23;
+        }
+      }
+    }
+  }
+
+  > .feedback {
+    > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 550px;
+      padding: 0 15px;
+
+      > h2 {
+        font-family: 'Nunito', sans-serif;
+        font-size: 24px;
+        color: #666666;
+        margin-bottom: 20px;
+        font-weight: 700;
+      }
+
+      > p {
+        font-size: 20px;
+        color: #666666;
+        margin-bottom: 25px;
+      }
+
+      > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 45px;
+        width: 100%;
+
+        > input {
+          border: 1px solid #666666;
+          border-right: 0;
+          opacity: 0.6;
+          padding: 10px;
+          height: 100%;
+          width: 100%;
+          border-top-left-radius: 4px;
+          border-bottom-left-radius: 4px;
+        }
+
+        > button {
+          border: 0;
+          border: 1px solid #9d65a4;
+          background-color: #9d65a4;
+          padding: 10px 25px;
+          height: 100%;
+          border-top-right-radius: 4px;
+          border-bottom-right-radius: 4px;
+          color: #ffffff;
+          font-weight: 700;
+          text-transform: uppercase;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  > .team {
+    > div {
+      font-family: 'Nunito', sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 15px 50px 15px;
+
+      > h2 {
+        font-size: 24px;
+        color: #918fb3;
+        font-weight: 700;
+        margin-bottom: 25px;
+      }
+
+      > div {
+        column-count: 2;
+        column-gap: 15px;
+
+        > div {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          background-color: #e9f1f2;
+          border: 1px solid #b7b7b7;
+          padding: 15px;
+          border-radius: 4px;
+          height: 150px;
+          page-break-inside: avoid;
+          break-inside: avoid-column;
+
+          & + div {
+            margin-top: 15px;
+          }
+
+          > h3 {
+            font-size: 18px;
+            color: #666666;
+            margin-bottom: 5px;
+          }
+
+          > p {
+            font-size: 16px;
+            color: #666666;
+            font-style: italic;
+          }
+        }
+
+        > .branca,
+        .cristiano {
+          height: 125px;
+        }
+
+        > .joao,
+        .michael,
+        .bruno {
+          height: 175px;
+        }
+
+        > .miguel {
+          height: 200px;
+        }
+
+        > .diogo {
+          height: 225px;
+        }
+      }
+    }
+  }
+
+  > form {
+    > div {
+      padding: 100px 15px;
+
+      > div {
+        > h2 {
+          color: #666666;
+          font-size: 30px;
+          margin-bottom: 5px;
+        }
+
+        > p {
+          font-size: 20px;
+          color: #666666;
+          margin-bottom: 25px;
+        }
+
+        > div {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-gap: 15px;
+        }
+
+        & input,
+        textarea {
+          border: 1px solid #666666;
+          opacity: 0.6;
+          padding: 10px;
+          height: 100%;
+          width: 100%;
+          border-radius: 4px;
+        }
+
+        > input {
+          height: 70px;
+        }
+
+        > textarea {
+          resize: none;
+          margin: 15px 0;
+          height: 150px;
+        }
+
+        > button {
+          float: right;
+          border: 0;
+          border: 1px solid #9d65a4;
+          background-color: #9d65a4;
+          padding: 10px 35px;
+          height: 100%;
+          border-radius: 4px;
+          color: #ffffff;
+          font-weight: 700;
+          text-transform: uppercase;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  > footer {
+    background-color: #685c82;
+
+    > div {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 15px;
+      padding: 75px 15px 100px 15px;
+
+      > div {
+        > h2 {
+          font-family: 'Nunito', sans-serif;
+          font-size: 24px;
+          color: #ffffff;
+          margin-bottom: 20px;
+          font-weight: 700;
+        }
+
+        > p {
+          font-size: 18px;
+          color: #ffffff;
+          margin-bottom: 25px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    > nav {
+      > div {
+        padding: 0 115px;
+      }
+    }
+
+    > .hello {
+      padding: 0 100px;
+
+      > div {
+        justify-content: flex-start;
+        width: 450px;
+      }
+    }
+
+    > .recommendations {
+      padding: 50px 115px 70px 115px;
+    }
+
+    > .feedback {
+      > div {
+        padding: 0 115px;
+      }
+    }
+
+    > .team {
+      > div {
+        padding: 0 115px 50px 115px;
+      }
+    }
+
+    > form {
+      > div {
+        padding: 100px 115px;
+      }
+    }
+
+    > footer {
+      > div {
+        padding: 75px 115px 100px 115px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    > nav {
+      > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        > header {
+          > span {
+            display: none;
+          }
+        }
+
+        > div {
+          display: flex;
+          flex-direction: row;
+          position: unset;
+          z-index: 0;
+          background-color: none;
+          box-shadow: none;
+
+          > a {
+            &:not(:first-child) {
+              margin-top: 0;
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+    }
+
+    > .recommendations {
+      > div {
+        align-items: flex-start;
+      }
+    }
+
+    > .feedback {
+      > div {
+        align-items: flex-end;
+
+        > p {
+          text-align: right;
+        }
+
+        > div {
+          width: 50%;
+        }
+      }
+    }
+
+    > .team {
+      > div {
+        > div {
+          column-count: 3;
+        }
+      }
+    }
+
+    > form {
+      > div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 50px;
+      }
+    }
+
+    > footer {
+      > div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 50px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  main {
+    > nav,
+    .feedback,
+    .team,
+    form,
+    footer {
+      display: flex;
+      justify-content: center;
+
+      > div {
+        width: 1000px;
+      }
+    }
+
+    > .hello {
+      display: flex;
+      justify-content: center;
+
+      > div {
+        width: 1000px;
+
+        > div {
+          margin-left: 100px;
+        }
+      }
+    }
+
+    > .recommendations {
+      display: flex;
+      justify-content: center;
+
+      > div {
+        width: 1000px;
+        padding: 0 100px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  main {
+    > nav,
+    .hello,
+    .recommendations,
+    .feedback,
+    form,
+    footer {
+      > div {
+        width: 1300px;
+      }
+    }
+
+    > .team {
+      > div {
+        width: 1300px;
+
+        > div {
+          column-count: 4;
+        }
+      }
+    }
+  }
+}

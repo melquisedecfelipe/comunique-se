@@ -1,0 +1,610 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nunito:400i,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lato', Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+main > nav {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 6px 10px #0000000f;
+          box-shadow: 0px 6px 10px #0000000f;
+}
+
+main > nav > div {
+  padding: 0 15px;
+  position: relative;
+  -webkit-transition: all 0.2 linear;
+  transition: all 0.2 linear;
+}
+
+main > nav > div > header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
+}
+
+main > nav > div > div {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+  padding: 30px;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 6px 10px #0000000f;
+          box-shadow: 0px 6px 10px #0000000f;
+  z-index: -1;
+}
+
+main > nav > div > div > a {
+  font-size: 16px;
+  color: #666666;
+  text-decoration: none;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+main > nav > div > div > a:not(:first-child) {
+  margin-top: 10px;
+}
+
+main > nav > div > div > a:hover {
+  color: #333333;
+}
+
+main > .hello > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 550px;
+}
+
+main > .hello > div > div {
+  width: 400px;
+}
+
+main > .hello > div > div > p {
+  color: #666666;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+main > .hello > div > div > p.--center {
+  text-align: center;
+}
+
+main > .hello > div > div > p > .light {
+  color: #918fb3;
+}
+
+main > .hello > div > div > h2 {
+  color: #666666;
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+main > .hello > div > div > h1 {
+  color: #666666;
+  font-size: 36px;
+  font-weight: 900;
+  text-align: right;
+}
+
+main > .recommendations {
+  background-color: #918fb3;
+  padding: 50px 15px 70px 15px;
+}
+
+main > .recommendations > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main > .recommendations > div > h2 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+main > .recommendations > div > div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30px 1fr 30px;
+      grid-template-columns: 30px 1fr 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  grid-gap: 10px;
+}
+
+main > .recommendations > div > div > div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+  overflow: hidden;
+}
+
+main > .recommendations > div > div > div > .card {
+  width: 280px;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+main > .recommendations > div > div > div > .card > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main > .recommendations > div > div > div > .card > div > p {
+  border: 2px solid #ffffff;
+  padding: 15px;
+}
+
+main > .recommendations > div > div > div > .card > div > p + p {
+  border-left: 0;
+  width: 100%;
+  text-align: right;
+}
+
+main > .recommendations > div > div > div > .card > p {
+  border: 2px solid #ffffff;
+  border-top: 0;
+  padding: 15px;
+}
+
+main > .recommendations > div > div > span {
+  width: 30px;
+  height: 50px;
+  background: #000000;
+  opacity: 0.23;
+}
+
+main > .feedback > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 550px;
+  padding: 0 15px;
+}
+
+main > .feedback > div > h2 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 24px;
+  color: #666666;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+main > .feedback > div > p {
+  font-size: 20px;
+  color: #666666;
+  margin-bottom: 25px;
+}
+
+main > .feedback > div > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 45px;
+  width: 100%;
+}
+
+main > .feedback > div > div > input {
+  border: 1px solid #666666;
+  border-right: 0;
+  opacity: 0.6;
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+main > .feedback > div > div > button {
+  border: 0;
+  border: 1px solid #9d65a4;
+  background-color: #9d65a4;
+  padding: 10px 25px;
+  height: 100%;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+main > .team > div {
+  font-family: 'Nunito', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 15px 50px 15px;
+}
+
+main > .team > div > h2 {
+  font-size: 24px;
+  color: #918fb3;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+main > .team > div > div {
+  -webkit-column-count: 2;
+          column-count: 2;
+  -webkit-column-gap: 15px;
+          column-gap: 15px;
+}
+
+main > .team > div > div > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-color: #e9f1f2;
+  border: 1px solid #b7b7b7;
+  padding: 15px;
+  border-radius: 4px;
+  height: 150px;
+  -webkit-column-break-inside: avoid;
+          break-inside: avoid-column;
+}
+
+main > .team > div > div > div + div {
+  margin-top: 15px;
+}
+
+main > .team > div > div > div > h3 {
+  font-size: 18px;
+  color: #666666;
+  margin-bottom: 5px;
+}
+
+main > .team > div > div > div > p {
+  font-size: 16px;
+  color: #666666;
+  font-style: italic;
+}
+
+main > .team > div > div > .branca,
+main > .team > div > div .cristiano {
+  height: 125px;
+}
+
+main > .team > div > div > .joao,
+main > .team > div > div .michael,
+main > .team > div > div .bruno {
+  height: 175px;
+}
+
+main > .team > div > div > .miguel {
+  height: 200px;
+}
+
+main > .team > div > div > .diogo {
+  height: 225px;
+}
+
+main > form > div {
+  padding: 100px 15px;
+}
+
+main > form > div > div > h2 {
+  color: #666666;
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+main > form > div > div > p {
+  font-size: 20px;
+  color: #666666;
+  margin-bottom: 25px;
+}
+
+main > form > div > div > div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 15px;
+}
+
+main > form > div > div input,
+main > form > div > div textarea {
+  border: 1px solid #666666;
+  opacity: 0.6;
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+}
+
+main > form > div > div > input {
+  height: 70px;
+}
+
+main > form > div > div > textarea {
+  resize: none;
+  margin: 15px 0;
+  height: 150px;
+}
+
+main > form > div > div > button {
+  float: right;
+  border: 0;
+  border: 1px solid #9d65a4;
+  background-color: #9d65a4;
+  padding: 10px 35px;
+  height: 100%;
+  border-radius: 4px;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+main > footer {
+  background-color: #685c82;
+}
+
+main > footer > div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 15px;
+  padding: 75px 15px 100px 15px;
+}
+
+main > footer > div > div > h2 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+main > footer > div > div > p {
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  main > nav > div {
+    padding: 0 115px;
+  }
+  main > .hello {
+    padding: 0 100px;
+  }
+  main > .hello > div {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 450px;
+  }
+  main > .recommendations {
+    padding: 50px 115px 70px 115px;
+  }
+  main > .feedback > div {
+    padding: 0 115px;
+  }
+  main > .team > div {
+    padding: 0 115px 50px 115px;
+  }
+  main > form > div {
+    padding: 100px 115px;
+  }
+  main > footer > div {
+    padding: 75px 115px 100px 115px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main > nav > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main > nav > div > header > span {
+    display: none;
+  }
+  main > nav > div > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: unset;
+    z-index: 0;
+    background-color: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  main > nav > div > div > a:not(:first-child) {
+    margin-top: 0;
+    margin-left: 10px;
+  }
+  main > .recommendations > div {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  main > .feedback > div {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  main > .feedback > div > p {
+    text-align: right;
+  }
+  main > .feedback > div > div {
+    width: 50%;
+  }
+  main > .team > div > div {
+    -webkit-column-count: 3;
+            column-count: 3;
+  }
+  main > form > div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+  }
+  main > footer > div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  main > nav,
+  main .feedback,
+  main .team,
+  main form,
+  main footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main > nav > div,
+  main .feedback > div,
+  main .team > div,
+  main form > div,
+  main footer > div {
+    width: 1000px;
+  }
+  main > .hello {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main > .hello > div {
+    width: 1000px;
+  }
+  main > .hello > div > div {
+    margin-left: 100px;
+  }
+  main > .recommendations {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main > .recommendations > div {
+    width: 1000px;
+    padding: 0 100px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  main > nav > div,
+  main .hello > div,
+  main .recommendations > div,
+  main .feedback > div,
+  main form > div,
+  main footer > div {
+    width: 1300px;
+  }
+  main > .team > div {
+    width: 1300px;
+  }
+  main > .team > div > div {
+    -webkit-column-count: 4;
+            column-count: 4;
+  }
+}
+/*# sourceMappingURL=style.css.map */
