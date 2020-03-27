@@ -65,16 +65,12 @@ main {
       height: 550px;
 
       > div {
-        width: 400px;
+        padding: 0 15px;
 
         > p {
           color: #666666;
           font-size: 24px;
           margin-bottom: 5px;
-
-          &.--center {
-            text-align: center;
-          }
 
           > .light {
             color: #918fb3;
@@ -91,7 +87,6 @@ main {
           color: #666666;
           font-size: 36px;
           font-weight: 900;
-          text-align: right;
         }
       }
     }
@@ -126,7 +121,8 @@ main {
           display: grid;
           grid-template-columns: repeat(4, 1fr);
           grid-gap: 15px;
-          overflow: hidden;
+          overflow-x: scroll;
+          padding-bottom: 10px;
 
           > .card {
             width: 280px;
@@ -396,7 +392,19 @@ main {
 
       > div {
         justify-content: flex-start;
-        width: 450px;
+
+        > div {
+          width: 475px;
+          padding: 0;
+
+          > .--center {
+            text-align: center;
+          }
+
+          > h1 {
+            text-align: right;
+          }
+        }
       }
     }
 
@@ -465,6 +473,12 @@ main {
     > .recommendations {
       > div {
         align-items: flex-start;
+
+        > div {
+          > div {
+            overflow-x: hidden;
+          }
+        }
       }
     }
 

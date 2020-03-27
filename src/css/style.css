@@ -84,17 +84,13 @@ main > .hello > div {
 }
 
 main > .hello > div > div {
-  width: 400px;
+  padding: 0 15px;
 }
 
 main > .hello > div > div > p {
   color: #666666;
   font-size: 24px;
   margin-bottom: 5px;
-}
-
-main > .hello > div > div > p.--center {
-  text-align: center;
 }
 
 main > .hello > div > div > p > .light {
@@ -111,7 +107,6 @@ main > .hello > div > div > h1 {
   color: #666666;
   font-size: 36px;
   font-weight: 900;
-  text-align: right;
 }
 
 main > .recommendations {
@@ -161,7 +156,8 @@ main > .recommendations > div > div > div {
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
   grid-gap: 15px;
-  overflow: hidden;
+  overflow-x: scroll;
+  padding-bottom: 10px;
 }
 
 main > .recommendations > div > div > div > .card {
@@ -454,7 +450,16 @@ main > footer > div > div > p {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    width: 450px;
+  }
+  main > .hello > div > div {
+    width: 475px;
+    padding: 0;
+  }
+  main > .hello > div > div > .--center {
+    text-align: center;
+  }
+  main > .hello > div > div > h1 {
+    text-align: right;
   }
   main > .recommendations {
     padding: 50px 115px 70px 115px;
@@ -510,6 +515,9 @@ main > footer > div > div > p {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+  }
+  main > .recommendations > div > div > div {
+    overflow-x: hidden;
   }
   main > .feedback > div {
     -webkit-box-align: end;
