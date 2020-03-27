@@ -1,11 +1,54 @@
-Olá, ficamos felizes com o seu interesse em trabalhar conosco =]
+<h1>Comunique-se</h1>
 
-O objetivo do teste é conhecermos um pouco melhor de como você desenvolve o seu código e avaliarmos se o seu perfil encaixa com a oportunidade em nosso time.
+<p>
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/melquisedecfelipe/comunique-se.svg">
 
-Para realizar o seu teste você deve clonar esse repositório e ao final submeter um Pull Request com o código desenvolvido. O teste consiste em desenvolver um HTML e CSS responsivo, utilizando como base a grid do bootstrap, seguindo o layout do arquivo "layout-test.xd".
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/melquisedecfelipe/comunique-se.svg">
 
-Fique à vontade para utilizar qualquer técnica ou ferramenta para realizar o trabalho, ao final o que vamos avaliar é a qualidade do código desenvolvido bem como a capacidade de utilizar boas práticas.
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/melquisedecfelipe/comunique-se.svg">
 
-Não hesite em nos enviar uma mensagem caso tenha alguma dúvida!
+  <a href="https://github.com/melquisedecfelipe/comunique-se/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/melquisedecfelipe/comunique-se.svg">
+  </a>
 
-Até breve o/
+  <a href="https://github.com/melquisedecfelipe/comunique-se/issues">
+    <img alt="Repository issues" src="https://img.shields.io/github/issues/melquisedecfelipe/comunique-se.svg">
+  </a>
+
+  <img alt="GitHub" src="https://img.shields.io/github/license/melquisedecfelipe/comunique-se.svg">
+</p>
+
+<p>
+  <a href="#rocket-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#information_source-how-to-use">How To Use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-license">License</a>
+</p>
+
+## :rocket: Technologies
+
+This project was developed with the following technologies:
+
+- [Sass](https://sass-lang.com/)
+
+## :information_source: How To Use
+
+To clone and run this application, you'll need [Git](https://git-scm.com) installed on your computer. From your command line:
+
+```bash
+# Clone this repository
+$ git clone https://github.com/melquisedecfelipe/comunique-se
+
+# Go into the repository
+$ cd comunique-se
+
+# Run frontend
+$ google-chrome index.html
+```
+
+## :memo: License
+
+This project is under the MIT license. See the [LICENSE](https://github.com/melquisedecfelipe/comunique-se/blob/master/LICENSE) for more information.
+
+---
+
+:wave: [Get in touch!](https://www.linkedin.com/in/melquisedecfelipe/)
