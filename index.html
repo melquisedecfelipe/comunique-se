@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>TesteInovação</title>
+    <link rel="stylesheet" type="text/css" href="./src/css/style.css" />
+  </head>
+  <body>
+    <main>
+      <nav>
+        <div>
+          <header>
+            <h1>TesteInovação</h1>
+            <span onClick="showMenu()">Show</span>
+          </header>
+          <div id="menu">
+            <a href="/">O desafio</a>
+            <a href="/">Recomendações</a>
+            <a href="/">Feedback</a>
+            <a href="/">A equipe</a>
+            <a href="/">Comentários</a>
+          </div>
+        </div>
+      </nav>
+      <section class="hello">
+        <div>
+          <div>
+            <p>Criamos produtos <span class="light">incríveis</span></p>
+            <p class="--center">que vão <strong>impactar</strong> o mercado.</p>
+            <h2><strong>Você está pronto</strong> para</h2>
+            <h1>fazer parte desse time?</h1>
+          </div>
+        </div>
+      </section>
+      <section class="recommendations">
+        <div>
+          <h2>Recomendações:</h2>
+          <div>
+            <span id="previous"></span>
+            <div id="slider">
+              <div class="card">
+                <div>
+                  <p>1</p>
+                  <p>Organize seu tempo</p>
+                </div>
+                <p>
+                  Verifique quanto tempo você tem disponível para realizar o
+                  teste com eficiênciae então crie pequenas metas para manter o
+                  ritmo.
+                </p>
+              </div>
+              <div class="card">
+                <div>
+                  <p>2</p>
+                  <p>Tire suas dúvidas</p>
+                </div>
+                <p>
+                  Se houver alguma dúvida, procure o aplicador do teste, assim
+                  você terá melhores chances de entregar o que foi proposto.
+                </p>
+              </div>
+              <div class="card">
+                <div>
+                  <p>3</p>
+                  <p>Seja criativo</p>
+                </div>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Error iusto est facere explicabo quos voluptatum, consectetur
+                  quantum.
+                </p>
+              </div>
+              <div class="card">
+                <div>
+                  <p>4</p>
+                  <p>Lorem ipsum</p>
+                </div>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Error iusto est facere explicabo quos voluptatum, consectetur
+                  quantum.
+                </p>
+              </div>
+            </div>
+            <span id="next"></span>
+          </div>
+        </div>
+      </section>
+      <section class="feedback">
+        <div>
+          <h2>Quer um feedback?</h2>
+          <p>
+            Preencha seu email abaixo para receber<br />
+            o feedback da sua avaliação.<br />
+            Estamos torcendo por você!
+          </p>
+          <div>
+            <input type="text" placeholder="Digite seu email aqui..." />
+            <button type="button">Enviar</button>
+          </div>
+        </div>
+      </section>
+      <section class="team">
+        <div>
+          <h2>A equipe</h2>
+          <div>
+            <div class="joao">
+              <h3>João Pereira, 30</h3>
+              <p>Desenvolvedor</p>
+            </div>
+            <div class="diogo">
+              <h3>Diogo Fraga, 30</h3>
+              <p>Gestor de Inovação Líder técnico</p>
+            </div>
+            <div class="bia">
+              <h3>Bia Ferreira, 28</h3>
+              <p>Designer de Interface</p>
+            </div>
+            <div class="michael">
+              <h3>Michael Bravo, 34</h3>
+              <p>Desenvolvedor Backend</p>
+            </div>
+            <div class="branca">
+              <h3>Branca Silva, 33</h3>
+              <p>Analista de Qualidade</p>
+            </div>
+            <div class="augusto">
+              <h3>Augusto Costa, 24</h3>
+              <p>Desenvolvedor Frontend</p>
+            </div>
+            <div class="marco">
+              <h3>Marco Dias, 41</h3>
+              <p>Desenvolvedor Backend</p>
+            </div>
+            <div class="miguel">
+              <h3>Miguel Silva, 32</h3>
+              <p>Desenvolvedor Backend</p>
+            </div>
+            <div class="carlos">
+              <h3>Carlos Gomes, 46</h3>
+              <p>Desenvolvedor Fullstack</p>
+            </div>
+            <div class="cristiano">
+              <h3>Cristiano Souza, 21</h3>
+              <p>Analista de Qualidade</p>
+            </div>
+            <div class="bruno">
+              <h3>Bruno Lima, 36</h3>
+              <p>Designer de Interface</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <form action="submit">
+        <div>
+          <div>
+            <h2>Gostou do teste?</h2>
+            <p>
+              Conte para nós o que você gostou no teste e o que você mudaria
+              para melhor avaliar um candidato à essa vaga. Sua opinião é
+              importante para nós, queremos os melhores no nosso time.
+            </p>
+          </div>
+          <div>
+            <div>
+              <input type="text" placeholder="Nome" />
+              <input type="text" placeholder="Sobrenome" />
+            </div>
+            <textarea placeholder="Comentários"></textarea>
+            <button>Enviar</button>
+          </div>
+        </div>
+      </form>
+      <footer>
+        <div>
+          <div>
+            <h2>FIM DO TESTE!</h2>
+            <p>
+              <strong>TesteInovação</strong> é uma marca fictícia com a única
+              finalidade de servir como material de estudo da equipe de inovação
+              do Grupo Comunique-se.
+            </p>
+            <p>IMPORTANTE: Não compartilhe esse teste.</p>
+          </div>
+          <div></div>
+        </div>
+      </footer>
+    </main>
+  </body>
+
+  <script type="text/javascript" src="./src/js/index.js"></script>
+</html>
