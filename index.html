@@ -12,19 +12,21 @@
       <nav>
         <div>
           <header>
-            <h1>TesteInovação</h1>
-            <span onClick="showMenu()">Show</span>
+            <img src="./src/img/logo.svg" alt="TesteInovação" />
+            <span
+              ><img src="./src/img/menu.svg" alt="Menu" onClick="showMenu()"
+            /></span>
           </header>
           <div id="menu">
-            <a href="/">O desafio</a>
-            <a href="/">Recomendações</a>
-            <a href="/">Feedback</a>
-            <a href="/">A equipe</a>
-            <a href="/">Comentários</a>
+            <a href="#o-desafio">O desafio</a>
+            <a href="#recomendacoes">Recomendações</a>
+            <a href="#feedback">Feedback</a>
+            <a href="#a-equipe">A equipe</a>
+            <a href="#comentarios">Comentários</a>
           </div>
         </div>
       </nav>
-      <section class="hello">
+      <section class="hello" id="o-desafio">
         <div>
           <div>
             <p>Criamos produtos <span class="light">incríveis</span></p>
@@ -34,11 +36,13 @@
           </div>
         </div>
       </section>
-      <section class="recommendations">
+      <section class="recommendations" id="recomendacoes">
         <div>
           <h2>Recomendações:</h2>
           <div>
-            <span id="previous"></span>
+            <span id="previous"
+              ><img src="./src/img/chevron-left.svg" alt="Inicio"
+            /></span>
             <div id="slider">
               <div class="card">
                 <div>
@@ -84,11 +88,13 @@
                 </p>
               </div>
             </div>
-            <span id="next"></span>
+            <span id="next">
+              <img src="./src/img/chevron-right.svg" alt="Próximo" />
+            </span>
           </div>
         </div>
       </section>
-      <section class="feedback">
+      <section class="feedback" id="feedback">
         <div>
           <h2>Quer um feedback?</h2>
           <p>
@@ -102,7 +108,7 @@
           </div>
         </div>
       </section>
-      <section class="team">
+      <section class="team" id="a-equipe">
         <div>
           <h2>A equipe</h2>
           <div>
@@ -153,7 +159,7 @@
           </div>
         </div>
       </section>
-      <form action="submit">
+      <form action="submit" id="comentarios">
         <div>
           <div>
             <h2>Gostou do teste?</h2>
@@ -184,7 +190,12 @@
             </p>
             <p>IMPORTANTE: Não compartilhe esse teste.</p>
           </div>
-          <div></div>
+          <div class="logos">
+            <img src="./src/img/pinterest.svg" alt="Pinterest" />
+            <img src="./src/img/skype.svg" alt="Skype" />
+            <img src="./src/img/twitter.svg" alt="Twitter" />
+            <img src="./src/img/youtube.svg" alt="Youtube" />
+          </div>
         </div>
       </footer>
     </main>
